@@ -1,0 +1,142 @@
+---
+permalink: intro-family.html 
+keywords: introduction, how astra works, how Astra works, what Astra is, astra control, kubernetes, astra control service, astra control center 
+summary: Astra は、 Kubernetes アプリケーションデータライフサイクル管理サービスで、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。 
+---
+= Astra ファミリの紹介
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+
+ネットアップの Astra 製品ファミリーは、クラウドネイティブアプリケーション向けのアプリケーションデータ管理とストレージを提供します。 
+
+Astra には次のサービスがあります。
+
+* * Astra Control * ：パブリッククラウドとオンプレミスの両方で Kubernetes ワークロードを管理、保護、移動する、アプリケーション対応のデータ管理ツールを使用。 3 つの制約が発生
++
+** * Astra Control Service * ：ネットアップが管理するサービスを使用して、パブリッククラウドの Kubernetes ワークロードをデータ管理
+** * Astra Control Center * ：オンプレミスの Kubernetes ワークロードのデータ管理に、自己管理ソフトウェアを使用
+
+
+* * Astra Data Store * ： Kubernetes ネイティブの共有ファイルサービスをコンテナや VM のワークロードに使用して、エンタープライズデータを管理
+* * Astra Trident * ： Container Storage Interface （ CSI ）に準拠したストレージプロビジョニングと管理を、ネットアップのストレージプロバイダとともに使用します。
+
+
+[cols="1h,2d"]
+|===
+| 機能 | プロダクト 
+
+
+| 管理 | Astra Control Center Astra Trident Astra 
+
+
+| ストレージ | Astra データストア 
+|===
+次の図は、 Astra ファミリーのエコシステムを示しています。image:astra-ads-architecture-diagram-v3.png["Astra のアーキテクチャ図とコンポーネント"]
+
+
+
+== Astra Control の略
+
+Astra Control は、 Kubernetes アプリケーションデータライフサイクル管理解決策で、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。
+
+
+
+=== の機能
+
+Astra Control は、 Kubernetes アプリケーションデータのライフサイクル管理に不可欠な機能を提供
+
+* 永続的ストレージを自動的に管理
+* アプリケーション対応のオンデマンドの Snapshot とバックアップを作成
+* ポリシーベースのスナップショットおよびバックアップ操作を自動化します
+* Kubernetes クラスタ間でアプリケーションとデータを移行
+* ステージングから本番環境へのアプリケーションのクローニング
+* アプリケーションの稼働状態と保護状態を視覚化します
+* ユーザインターフェイスまたは API を使用して、バックアップと移行のワークフローを実装します
+
+
+Astra Control は、状態の変化を常に監視しているので、新しいアプリケーションを追加していくことを認識しています。
+
+
+
+=== 導入モデル
+
+Astra Control には、次の 2 つの導入モデルがあります。
+
+* * Astra Control Service * ： Google Kubernetes Engine （ GKE ）および Azure Kubernetes Service （ AKS ）で Kubernetes クラスタのアプリケーション対応データ管理を提供する、ネットアップが管理するサービス。
++
+https://docs.netapp.com/us-en/astra/index.html["Astra Control Service のマニュアル"^]
+
+* * Astra Control Center * ：オンプレミス環境で実行される Kubernetes クラスタのアプリケーション対応データ管理を提供する、自己管理ソフトウェアです。
++
+https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のドキュメント"^]
+
+
+
+[cols="1h,2d,2a"]
+|===
+|  | Astra 制御サービス | Astra Control Center の略 
+
+
+| どのような方法で提供されますか？ | ネットアップのフルマネージドクラウドサービス  a| 
+ソフトウェアとしてダウンロード、インストール、および管理します
+
+
+
+| ホストされているのはどこですか？ | ネットアップが選択したパブリッククラウドで実現  a| 
+指定した Kubernetes クラスタで実行します
+
+
+
+| 更新方法 | 管理はネットアップが行います  a| 
+更新を管理します
+
+
+
+| アプリケーションデータ管理機能とは何ですか？ | バックエンドストレージと外部サービスを除き、両方のプラットフォームで同じ機能を利用できます  a| 
+バックエンドストレージと外部サービスを除き、両方のプラットフォームで同じ機能を利用できます
+
+
+
+| ストレージバックエンドでサポートされるもの | ネットアップのクラウドサービス  a| 
+* Astra データストアストレージバックエンド
+* NetApp ONTAP AFF および FAS システム
+
+
+|===
+
+
+== Astra データストア
+
+Astra データストアは、分散型の並列ファイルシステムです。 Kubernetes クラスタにネイティブな拡張性に優れた共有ファイルサービスとブロックデータサービスを、エンタープライズデータ管理機能を備えた Kubernetes クラスタで提供します。
+
+Astra データストアの主な機能は次のとおりです。
+
+* ソフトウェアとしてパッケージ化されて提供されます
+* サードパーティ製コモディティハードウェア上で動作します
+* 従来のアプリケーションとクラウドネイティブアプリケーションに共通のデータプレーンを提供します
+
+
+https://docs.netapp.com/us-en/astra-data-store/["Astra データストアのドキュメント"^]
+
+
+
+== Astra Trident
+
+Astra Trident は、 Kubernetes Container Storage Interface （ CSI ）ドライブユーザーの間で行われるネットアップのオープンソース実装です。Astra Trident が Kubernetes アプリケーションのオーケストレーションとデータ接続を実現
+
+https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"^]
+
+
+
+== を参照してください。
+
+* https://docs.netapp.com/us-en/astra/index.html["Astra Control Service のマニュアル"^]
+* https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のドキュメント"^]
+* https://docs.netapp.com/us-en/astra-data-store/["Astra データストアのドキュメント"^]
+* https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"^]
+* https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API の略"^]
+* https://docs.netapp.com/us-en/cloudinsights/["Cloud Insights のドキュメント"^]
+* https://docs.netapp.com/us-en/ontap/index.html["ONTAP のドキュメント"^]
+
