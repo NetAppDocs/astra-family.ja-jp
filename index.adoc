@@ -6,6 +6,7 @@ summary: ネットアップの Astra 製品ファミリーは、オンプレミ�
 ---
 = Astra のドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

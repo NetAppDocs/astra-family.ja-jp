@@ -5,6 +5,7 @@ summary: Astra は、 Kubernetes アプリケーションデータライフサ�
 ---
 = Astra ファミリの紹介
 :hardbreaks:
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
