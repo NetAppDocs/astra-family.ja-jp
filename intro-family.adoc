@@ -3,7 +3,7 @@ permalink: intro-family.html
 keywords: introduction, how astra works, how Astra works, what Astra is, astra control, kubernetes, astra control service, astra control center 
 summary: Astra は、 Kubernetes アプリケーションデータライフサイクル管理サービスで、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。 
 ---
-= Astra ファミリの紹介
+= Astra製品ファミリーの詳細をご確認ください
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -34,6 +34,12 @@ Astra には次のサービスがあります。
 
 | ストレージ | Astra データストア 
 |===
+次の図は、ネットアップのAstraポートフォリオを示しています。image:astra-product-family.png["Astra 製品ファミリー"]
+
+
+
+== Astraファミリーエコシステム
+
 次の図は、 Astra ファミリーのエコシステムを示しています。image:astra-ads-architecture-diagram-v3.png["Astra のアーキテクチャ図とコンポーネント"]
 
 

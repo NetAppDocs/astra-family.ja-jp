@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="42b90d40b51b0ccfc8a50cfa2f6c88bc" category="summary">Astra は、 Kubernetes アプリケーションデータライフサイクル管理サービスで、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。</block>
-  <block id="1132699b3be3edf1b70f14c2203f23a1" category="doc">Astra ファミリの紹介</block>
   <block id="4a37c56b2766c00f553f023f2e4987e3" category="paragraph">ネットアップの Astra 製品ファミリーは、クラウドネイティブアプリケーション向けのアプリケーションデータ管理とストレージを提供します。 </block>
   <block id="b71fa69e65a9178741af35068df8a392" category="paragraph">Astra には次のサービスがあります。</block>
   <block id="9cdf0ccc35fe6d9fdc72efbcca1bacad" category="list-text">* Astra Control * ：パブリッククラウドとオンプレミスの両方で Kubernetes ワークロードを管理、保護、移動する、アプリケーション対応のデータ管理ツールを使用。 3 つの制約が発生</block>
@@ -107,4 +106,8 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
+  <block id="f4e3fd93268ea6ed82aa5edf5e2e0cb1" category="doc">Astra製品ファミリーの詳細をご確認ください</block>
+  <block id="bb453665f57f6823950856f7a9bad0c3" category="inline-image-macro">Astra 製品ファミリー</block>
+  <block id="0ee3fa33cec12a8c87c052e3967c638a" category="paragraph">次の図は、ネットアップのAstraポートフォリオを示しています。<block ref="17d3506812ac5cd550afaae120fc3072" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="16e3341389486c882cdc91177ff32570" category="section-title">Astraファミリーエコシステム</block>
 </blocks>
