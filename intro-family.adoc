@@ -10,7 +10,8 @@ summary: Astra は、 Kubernetes アプリケーションデータライフサ�
 :imagesdir: ./media/
 
 
-ネットアップの Astra 製品ファミリーは、クラウドネイティブアプリケーション向けのアプリケーションデータ管理とストレージを提供します。 
+[role="lead"]
+ネットアップのAstra製品ファミリーは、クラウドネイティブアプリケーション向けのアプリケーションデータ管理とストレージを提供します。
 
 Astra には次のサービスがあります。
 
@@ -23,13 +24,6 @@ Astra には次のサービスがあります。
 * * Astra Trident * ： Container Storage Interface （ CSI ）に準拠したストレージプロビジョニングと管理を、ネットアップのストレージプロバイダとともに使用します。
 
 
-[cols="1h,2d"]
-|===
-| 機能 | プロダクト 
-
-
-| 管理 | Astra Control Center Astra Trident Astra 
-|===
 
 
 == Astra Control の略
@@ -95,7 +89,9 @@ https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のド
 
 
 | ストレージバックエンドでサポートされるもの | ネットアップのクラウドサービス  a| 
-NetApp ONTAP AFF および FAS システム
+* NetApp ONTAP AFF および FAS システム
+* Cloud Volumes ONTAP ストレージバックエンド
+
 
 |===
 
