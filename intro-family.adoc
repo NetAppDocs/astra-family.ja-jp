@@ -45,15 +45,13 @@ Astra Control は、 Kubernetes アプリケーションデータのライフサ
 * ユーザインターフェイスまたは API を使用して、バックアップと移行のワークフローを実装します
 
 
-Astra Control は、状態の変化を常に監視しているので、新しいアプリケーションを追加していくことを認識しています。
-
 
 
 === 導入モデル
 
 Astra Control には、次の 2 つの導入モデルがあります。
 
-* * Astra Control Service * ： Google Kubernetes Engine （ GKE ）および Azure Kubernetes Service （ AKS ）で Kubernetes クラスタのアプリケーション対応データ管理を提供する、ネットアップが管理するサービス。
+* * Astra Control Service *：Amazon Web Services（AWS）、Azure Kubernetes Service（AKS）、Google Kubernetes Engine（GKE）でKubernetesクラスタのアプリケーション対応データ管理を提供する、ネットアップが管理するサービス。
 +
 https://docs.netapp.com/us-en/astra/index.html["Astra Control Service のマニュアル"^]
 
@@ -63,32 +61,53 @@ https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のド
 
 
 
-[cols="1h,2d,2a"]
+[cols="1h,2a,2a"]
 |===
 |  | Astra 制御サービス | Astra Control Center の略 
 
 
-| どのような方法で提供されますか？ | ネットアップのフルマネージドクラウドサービス  a| 
+| どのような方法で提供されますか？  a| 
+ネットアップのフルマネージドクラウドサービス
+ a| 
 ソフトウェアとしてダウンロード、インストール、および管理します
 
 
 
-| ホストされているのはどこですか？ | ネットアップが選択したパブリッククラウドで実現  a| 
+| ホストされているのはどこですか？  a| 
+ネットアップが選択したパブリッククラウドで実現
+ a| 
 指定した Kubernetes クラスタで実行します
 
 
 
-| 更新方法 | 管理はネットアップが行います  a| 
+| 更新方法  a| 
+管理はネットアップが行います
+ a| 
 更新を管理します
 
 
 
-| アプリケーションデータ管理機能とは何ですか？ | バックエンドストレージと外部サービスを除き、両方のプラットフォームで同じ機能を利用できます  a| 
-バックエンドストレージと外部サービスを除き、両方のプラットフォームで同じ機能を利用できます
+| ストレージバックエンドでサポートされるもの  a| 
+* Amazon Web Servicesの特長
++
+** Amazon EBSのことです
+** NetApp ONTAP 対応の Amazon FSX
+
+
+* Google Cloud
++
+** Google Persistent Disk のことです
+** NetApp Cloud Volumes Service の略
+
+
+* Microsoft Azure
++
+** Azure Managed Disksの略
+** Azure NetApp Files の特長
 
 
 
-| ストレージバックエンドでサポートされるもの | ネットアップのクラウドサービス  a| 
+ a| 
 * NetApp ONTAP AFF および FAS システム
 * Cloud Volumes ONTAP ストレージバックエンド
 
