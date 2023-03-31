@@ -43,7 +43,7 @@ Astra Control は、 Kubernetes アプリケーションデータのライフサ
 * ステージングから本番環境へのアプリケーションのクローニング
 * NetApp SnapMirrorテクノロジを使用して、アプリケーションをリモートシステムにレプリケートします
 * アプリケーションの稼働状態と保護状態を視覚化します
-* ユーザインターフェイスまたは API を使用して、バックアップと移行のワークフローを実装します
+* Web UIまたはAPIを使用して、バックアップと移行のワークフローを実装します
 
 
 
@@ -52,7 +52,7 @@ Astra Control は、 Kubernetes アプリケーションデータのライフサ
 
 Astra Control には、次の 2 つの導入モデルがあります。
 
-* * Astra Control Service *：Amazon Web Services（AWS）、Azure Kubernetes Service（AKS）、Google Kubernetes Engine（GKE）でKubernetesクラスタのアプリケーション対応データ管理を提供する、ネットアップが管理するサービス。
+* * Astra Control Service *：複数のクラウドプロバイダ環境および自己管理型KubernetesクラスタのKubernetesクラスタに対して、アプリケーション対応のデータ管理を提供する、ネットアップのマネージドサービスです。
 +
 https://docs.netapp.com/us-en/astra/index.html["Astra Control Service のマニュアル"^]
 
@@ -93,24 +93,35 @@ Kubernetesクラスタを自社所有で導入
 +
 ** Amazon EBSのことです
 ** NetApp ONTAP 対応の Amazon FSX
+** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
 
 
 * Google Cloud
 +
 ** Google Persistent Disk のことです
 ** NetApp Cloud Volumes Service の略
+** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
 
 
 * Microsoft Azure
 +
 ** Azure Managed Disksの略
 ** Azure NetApp Files の特長
+** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
+
+
+* 自己管理型クラスタ
++
+** Amazon EBSのことです
+** Google Persistent Disk のことです
+** Azure Managed Disksの略
+** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
 
 
 
  a| 
 * NetApp ONTAP AFF および FAS システム
-* Cloud Volumes ONTAP ストレージバックエンド
+* link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
 
 
 |===
