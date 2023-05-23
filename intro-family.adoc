@@ -54,11 +54,11 @@ Astra Control には、次の 2 つの導入モデルがあります。
 
 * * Astra Control Service *：複数のクラウドプロバイダ環境および自己管理型KubernetesクラスタのKubernetesクラスタに対して、アプリケーション対応のデータ管理を提供する、ネットアップのマネージドサービスです。
 +
-https://["Astra Control Service のマニュアル"^]
+https://docs.netapp.com/us-en/astra/index.html["Astra Control Service のマニュアル"^]
 
 * * Astra Control Center * ：オンプレミス環境で実行される Kubernetes クラスタのアプリケーション対応データ管理を提供する、自己管理ソフトウェアです。NetApp Cloud Volumes ONTAP ストレージバックエンドを使用して、複数のクラウドプロバイダ環境にAstra Control Centerをインストールすることもできます。
 +
-https://["Astra Control Center のドキュメント"^]
+https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のドキュメント"^]
 
 
 
@@ -131,16 +131,16 @@ https://["Astra Control Center のドキュメント"^]
 
 Astra Trident は、 Kubernetes Container Storage Interface （ CSI ）ドライブユーザーの間で行われるネットアップのオープンソース実装です。Astra Trident が Kubernetes アプリケーションのオーケストレーションとデータ接続を実現
 
-https://["Astra Trident のドキュメント"^]
+https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"^]
 
 
 
 == を参照してください。
 
-* https://["Astra Control Service のマニュアル"^]
-* https://["Astra Control Center のドキュメント"^]
-* https://["Astra Trident のドキュメント"^]
-* https://["Astra Control API の略"^]
-* https://["Cloud Insights のドキュメント"^]
-* https://["ONTAP のドキュメント"^]
+* https://docs.netapp.com/us-en/astra/index.html["Astra Control Service のマニュアル"^]
+* https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のドキュメント"^]
+* https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"^]
+* https://docs.netapp.com/us-en/astra-automation/index.html["Astra Control API の略"^]
+* https://docs.netapp.com/us-en/cloudinsights/["Cloud Insights のドキュメント"^]
+* https://docs.netapp.com/us-en/ontap/index.html["ONTAP のドキュメント"^]
 
