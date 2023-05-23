@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="42b90d40b51b0ccfc8a50cfa2f6c88bc" category="summary">Astra は、 Kubernetes アプリケーションデータライフサイクル管理サービスで、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。</block>
+  <block id="f4e3fd93268ea6ed82aa5edf5e2e0cb1" category="doc">Astra製品ファミリーの詳細をご確認ください</block>
+  <block id="9b30491a8e180824ae0cdea0a4ada724" category="paragraph">ネットアップのAstra製品ファミリーは、クラウドネイティブアプリケーション向けのアプリケーションデータ管理とストレージを提供します。</block>
+  <block id="b71fa69e65a9178741af35068df8a392" category="paragraph">Astra には次のサービスがあります。</block>
+  <block id="9cdf0ccc35fe6d9fdc72efbcca1bacad" category="list-text">* Astra Control * ：パブリッククラウドとオンプレミスの両方で Kubernetes ワークロードを管理、保護、移動する、アプリケーション対応のデータ管理ツールを使用。 3 つの制約が発生</block>
+  <block id="227ef150dba3452cf99d8eb20c88f292" category="list-text">* Astra Control Service * ：ネットアップが管理するサービスを使用して、パブリッククラウドの Kubernetes ワークロードをデータ管理</block>
+  <block id="5fcaa4cc6e27b1f2dcee1db0dcee999a" category="list-text">* Astra Control Center * ：オンプレミスの Kubernetes ワークロードのデータ管理に、自己管理ソフトウェアを使用</block>
+  <block id="383cdefecd7eda4a982198ecdbbce7da" category="list-text">* Astra Trident * ： Container Storage Interface （ CSI ）に準拠したストレージプロビジョニングと管理を、ネットアップのストレージプロバイダとともに使用します。</block>
+  <block id="aabd9360d69086aa78c24d087317998e" category="section-title">Astra Control</block>
+  <block id="0e1998253be388fcd1c18fc76ead9054" category="paragraph">Astra Control は、 Kubernetes アプリケーションデータライフサイクル管理解決策で、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。</block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">機能</block>
+  <block id="c66fd3d61ca9e5331b05a6bd70d4a1df" category="paragraph">Astra Control は、 Kubernetes アプリケーションデータのライフサイクル管理に不可欠な機能を提供</block>
+  <block id="842f680f400de3b6ee92728ef695d366" category="list-text">永続的ストレージを自動的に管理</block>
+  <block id="0a5245490d6d6f511bbdb3db35acfe54" category="list-text">アプリケーション対応のオンデマンドの Snapshot とバックアップを作成</block>
+  <block id="f107a6e34d3d0df36d460bc5b3a5fe8b" category="list-text">ポリシーベースのスナップショットおよびバックアップ操作を自動化します</block>
+  <block id="ae3099cc177fc161f80c6965fe89a71a" category="list-text">Kubernetes クラスタ間でアプリケーションとデータを移行</block>
+  <block id="f7173fff9a92f2bab2648f86282ab07c" category="list-text">NetApp SnapMirrorテクノロジを使用してアプリケーションをリモートシステムにレプリケート（Astra Control Center）</block>
+  <block id="631928ccc601c8e49976a8d73af28304" category="list-text">ステージング環境から本番環境へのアプリケーションのクローニング</block>
+  <block id="1c26e7db082840fcbfcd87527c92e1aa" category="list-text">アプリケーションの稼働状態と保護状態を視覚化します</block>
+  <block id="6c4ff7542dcef16bc12bbbab0c160e9a" category="list-text">Web UIまたはAPIを使用して、バックアップと移行のワークフローを実装します</block>
+  <block id="6762973af9b127d271f0d2b2aea0bc96" category="section-title">導入モデル</block>
+  <block id="db1905d057dd6fde6f8b7bd6afe60e41" category="paragraph">Astra Control には、次の 2 つの導入モデルがあります。</block>
+  <block id="b7372905cd310308af0541e07ef5175f" category="list-text">* Astra Control Service *：複数のクラウドプロバイダ環境および自己管理型KubernetesクラスタのKubernetesクラスタに対して、アプリケーション対応のデータ管理を提供する、ネットアップのマネージドサービスです。</block>
+  <block id="ef22ff17624b3faeed227ce5c717eb5f" category="inline-link">Astra Control Service のマニュアル</block>
+  <block id="6762180adf48075df77efbf264e982ec" category="paragraph"><block ref="6762180adf48075df77efbf264e982ec" category="inline-link-rx"></block></block>
+  <block id="db7cdbe16748f17a4795bd3e96b798a0" category="list-text">* Astra Control Center * ：オンプレミス環境で実行される Kubernetes クラスタのアプリケーション対応データ管理を提供する、自己管理ソフトウェアです。NetApp Cloud Volumes ONTAP ストレージバックエンドを使用して、複数のクラウドプロバイダ環境にAstra Control Centerをインストールすることもできます。</block>
+  <block id="3a4b2c66d4bdac6ce0e3340c71a39eda" category="inline-link">Astra Control Center のドキュメント</block>
+  <block id="281db70ca8dfcac9ebe6166029058548" category="paragraph"><block ref="281db70ca8dfcac9ebe6166029058548" category="inline-link-rx"></block></block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="cell"></block>
+  <block id="35b46e301702b6fcb16192f9f4cf4533" category="cell">Astra 制御サービス</block>
+  <block id="9c634046a90a62883b122e76b9afcef2" category="cell">Astra Control Center の略</block>
+  <block id="72fa0b165b80dd423c3cca71e56e6e85" category="cell">どのような方法で提供されますか？</block>
+  <block id="f7b1d494056b7a9289f329a721d9f318" category="paragraph">ネットアップのフルマネージドクラウドサービス</block>
+  <block id="aff53210beade5ba79414ae13eb6b73d" category="paragraph">ソフトウェアとしてダウンロード、インストール、および管理します</block>
+  <block id="7cae1429bdc4131db46365e8fc893a77" category="cell">ホストされているのはどこですか？</block>
+  <block id="7ab48d8d90e46b91aa73c1832b7681f9" category="paragraph">ネットアップが選択したパブリッククラウドで実現</block>
+  <block id="384c577b472799aa8cd781ce64f2bb34" category="paragraph">自社所有のKubernetesクラスタ</block>
+  <block id="a564f860d9dd9df279c4ea80b08d026a" category="cell">更新方法</block>
+  <block id="b2929741e98ca2c366d8d7dfda36e2b9" category="paragraph">管理はネットアップが行います</block>
+  <block id="091f846d60c1037c90ba7580f37ef9fa" category="paragraph">更新を管理します</block>
+  <block id="c1d5f7fc5daa2ea9189ee2df5ca15da2" category="cell">ストレージバックエンドでサポートされるもの</block>
+  <block id="7c8ee67c5d264bc13cdb41c37af356c8" category="list-text">Amazon Web Servicesの特長</block>
+  <block id="516729a7c0562425406a22cfe6a2c163" category="list-text">Amazon EBSのことです</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">NetApp ONTAP 対応の Amazon FSX</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link-macro">Cloud Volumes ONTAP</block>
+  <block id="3e69caaf9a57cb5719432beede8b95e7" category="list-text"><block ref="3e69caaf9a57cb5719432beede8b95e7" category="inline-link-macro-rx"></block></block>
+  <block id="26ee644c2b0c0d7a061dc960838350a3" category="list-text">Google Cloud</block>
+  <block id="4ea21227490cfda88113ac9e09c3d896" category="list-text">Google Persistent Disk のことです</block>
+  <block id="1a4c7c9b6e3157ccd0101fd0836c0bfc" category="list-text">NetApp Cloud Volumes Service の略</block>
+  <block id="3be7ceee76706d9dfc15d8f9c233dfb8" category="list-text"><block ref="3be7ceee76706d9dfc15d8f9c233dfb8" category="inline-link-macro-rx"></block></block>
+  <block id="4bce0cadbd95655804d72e0df4ac6d7b" category="list-text">Microsoft Azure</block>
+  <block id="79c9c43a409053927cc323915dbf1c06" category="list-text">Azure Managed Disksの略</block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files の特長</block>
+  <block id="3cd945141d6a16b2dc2b3157f739c39f" category="list-text"><block ref="3cd945141d6a16b2dc2b3157f739c39f" category="inline-link-macro-rx"></block></block>
+  <block id="55b6146ebe43b01a290a7aad48a66943" category="list-text">自己管理クラスタ：</block>
+  <block id="5b18b199efd7629226cef91930cd45e0" category="list-text"><block ref="5b18b199efd7629226cef91930cd45e0" category="inline-link-macro-rx"></block></block>
+  <block id="d6fc0eb1930e7e56affc953c237c5514" category="list-text">NetApp ONTAP AFF および FAS システム</block>
+  <block id="086e6c16e3fe8e13c336612ef636aa02" category="section-title">Astra Trident</block>
+  <block id="8c194651a71f99966bb16a65c5ed39ba" category="paragraph">Astra Trident は、 Kubernetes Container Storage Interface （ CSI ）ドライブユーザーの間で行われるネットアップのオープンソース実装です。Astra Trident が Kubernetes アプリケーションのオーケストレーションとデータ接続を実現</block>
+  <block id="14d9b10c6196045941347a9e85704b50" category="inline-link">Astra Trident のドキュメント</block>
+  <block id="4a2ab62188738135163aaaaeab1d6cfe" category="paragraph"><block ref="4a2ab62188738135163aaaaeab1d6cfe" category="inline-link-rx"></block></block>
+  <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="section-title">を参照してください。</block>
+  <block id="d2345544e5b85f26908fbbfcea4178f8" category="inline-link">Astra Control API の略</block>
+  <block id="e84bb7e947a5b25481546110f575734a" category="list-text"><block ref="e84bb7e947a5b25481546110f575734a" category="inline-link-rx"></block></block>
+  <block id="5858ee4031acd7b896faa2d3d2c1a299" category="inline-link">Cloud Insights のドキュメント</block>
+  <block id="2b93b48daf034e4100d00b85950e109d" category="list-text"><block ref="2b93b48daf034e4100d00b85950e109d" category="inline-link-rx"></block></block>
+  <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">ONTAP のドキュメント</block>
+  <block id="8217522f2b9eea86f1099a2aba54aebd" category="list-text"><block ref="8217522f2b9eea86f1099a2aba54aebd" category="inline-link-rx"></block></block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">著作権に関する声明、商標、特許などにアクセスできます。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">ネットアップが所有する特許の最新リストは、次のサイトで入手できます。</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
+  <block id="108238230cdf60dd0887f944a8d13493" category="inline-link-macro">Astra Control Center 21.08 リリースの注意</block>
+  <block id="c720f04897a24c86f93ce764015021d4" category="paragraph"><block ref="c720f04897a24c86f93ce764015021d4" category="inline-link-macro-rx"></block></block>
+  <block id="e81b0f8fae224ca0c3d3258b75a989dd" category="section-title">Astra Control API ライセンス</block>
+  <block id="f7c79ca7f13fd9da78390d5a97db7042" category="paragraph"><block ref="f7c79ca7f13fd9da78390d5a97db7042" category="inline-link-rx"></block></block>
+  <block id="061e6aa283b127d491599efd28e5adb3" category="summary">ネットアップの Astra 製品ファミリーは、オンプレミスとパブリッククラウドの Kubernetes アプリケーション向けに、ネットアップのストレージテクノロジとデータ管理テクノロジを基盤とするストレージサービスとアプリケーション対応データ管理サービスを提供します。</block>
+  <block id="4b675e54aa1095b2b20f8c4019de37b0" category="doc">Astra のドキュメント</block>
+  <block id="2d63f74d9b059520b514097de3c8e2f5" category="sidebar">Astra 製品ファミリーのドキュメント</block>
+  <block id="40dec546414c1ebdfde8d9858f0938c3" category="sidebar">すべての製品</block>
+  <block id="7c5d8433a062d6a740a01339f0496a43" category="sidebar">アプリケーションデータ管理</block>
+  <block id="bfd15aa26ba0ced782240c4a8b7e517e" category="sidebar">ストレージ管理</block>
+  <block id="4fd0a97eaa9f8d1a9bf7332e22654095" category="sidebar">自動化と API</block>
+  <block id="ac6317668edf792a9cd648b62e3a3a1e" category="sidebar">Astra ファミリーの詳細をご確認ください</block>
+  <block id="506cb50348b89bb82ceaa4bb08e4b2d8" category="sidebar">Astra 製品ファミリーの詳細をご確認ください。</block>
+  <block id="a315052239d40dd49d5a66ab5d7c8a1b" category="sidebar">ネットアップが管理するサービスを使用して、パブリッククラウドの Kubernetes ワークロードをアプリケーション対応で管理</block>
+  <block id="f64830a81babe5853a9db001f89c0d1f" category="sidebar">アプリケーション対応の Kubernetes ワークロードのデータ管理に、自己管理ソフトウェアを使用できます。</block>
+  <block id="e0f4a858a15b865d90b24b46633e2899" category="sidebar">Kubernetes ワークロードに CSI 準拠のストレージプロビジョニングおよび管理を、ネットアップのストレージプロバイダとともに使用します。</block>
+  <block id="7d71aa0082960701504d9a25825cec9a" category="sidebar">Astra の自動化と API</block>
+  <block id="9ba87b2fd4ad6a397bd73df498a72886" category="sidebar">API と SDK を使用して、 Astra の運用ワークフローを自動化できます。</block>
+</blocks>
