@@ -23,7 +23,7 @@ product-family:
   - title: 自動化と API
     tags: tag_api
   tiles:
-  - title: Astra ファミリーの詳細をご確認ください
+  - title: Astra Controlの詳細をご確認ください
     icon: "./media/Astra_Family_logo_line.png"
     url: intro-family.html
     summary: Astra 製品ファミリーの詳細をご確認ください。

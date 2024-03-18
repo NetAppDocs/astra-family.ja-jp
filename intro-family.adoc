@@ -3,7 +3,7 @@ permalink: intro-family.html
 keywords: introduction, how astra works, how Astra works, what Astra is, astra control, kubernetes, astra control service, astra control center 
 summary: Astra は、 Kubernetes アプリケーションデータライフサイクル管理サービスで、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。 
 ---
-= Astra製品ファミリーの詳細をご確認ください
+= Astra Controlの詳細をご確認ください
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -11,46 +11,87 @@ summary: Astra は、 Kubernetes アプリケーションデータライフサ�
 
 
 [role="lead"]
-ネットアップのAstra製品ファミリーは、クラウドネイティブアプリケーション向けのアプリケーションデータ管理とストレージを提供します。
-
-Astra には次のサービスがあります。
-
-* * Astra Control * ：パブリッククラウドとオンプレミスの両方で Kubernetes ワークロードを管理、保護、移動する、アプリケーション対応のデータ管理ツールを使用。 3 つの制約が発生
-+
-** * Astra Control Service * ：ネットアップが管理するサービスを使用して、パブリッククラウドの Kubernetes ワークロードをデータ管理
-** * Astra Control Center * ：オンプレミスの Kubernetes ワークロードのデータ管理に、自己管理ソフトウェアを使用
-
-
-* * Astra Trident * ： Container Storage Interface （ CSI ）に準拠したストレージプロビジョニングと管理を、ネットアップのストレージプロバイダとともに使用します。
+Astra Controlは、Kubernetesアプリケーションデータのライフサイクル管理解決策です。ステートフルアプリケーションの運用を簡易化し、ハイブリッドおよびマルチクラウド環境全体でKubernetesワークロードを格納、保護、移動するのに役立ちます。
 
 
 
-
-== Astra Control
-
-Astra Control は、 Kubernetes アプリケーションデータライフサイクル管理解決策で、ステートフルアプリケーションの運用を簡易化します。Kubernetes ワークロードの保護、バックアップ、移行を簡易化し、作業用アプリケーションのクローンを瞬時に作成できます。
-
-
-
-=== 機能
+== 機能
 
 Astra Control は、 Kubernetes アプリケーションデータのライフサイクル管理に不可欠な機能を提供
 
-* 永続的ストレージを自動的に管理
-* アプリケーション対応のオンデマンドの Snapshot とバックアップを作成
-* ポリシーベースのスナップショットおよびバックアップ操作を自動化します
-* Kubernetes クラスタ間でアプリケーションとデータを移行
-* NetApp SnapMirrorテクノロジを使用してアプリケーションをリモートシステムにレプリケート（Astra Control Center）
-* ステージング環境から本番環境へのアプリケーションのクローニング
-* アプリケーションの稼働状態と保護状態を視覚化します
-* Web UIまたはAPIを使用して、バックアップと移行のワークフローを実装します
+*ストア*：
+
+* コンテナ化されたワークロード向けの動的なストレージプロビジョニング
+* コンテナから永続的ボリュームへの転送中データの暗号化
+* リージョン間、ゾーン間レプリケーション
+
+
+*保護*：
+
+* アプリケーション全体とそのデータを自動検出し、アプリケーション対応の保護を実現
+* 組織のニーズに基づいて'任意のスナップショット・バージョンからアプリケーションを即座にリカバリ
+* ゾーン、リージョン、クラウドプロバイダ間で高速フェイルオーバー
+
+
+*移動*：
+
+* Kubernetesクラスタとクラウド間でアプリケーションとデータを完全に移動
+* アプリケーションとデータ全体を瞬時にクローニング
+* 一貫したWeb UIとAPIでワンクリックでアプリケーションを移行
 
 
 
 
-=== 導入モデル
+== アーキテクチャ
 
-Astra Control には、次の 2 つの導入モデルがあります。
+IT部門はAstra Controlのアーキテクチャにより、高度なデータ管理機能を提供できるようになり、Kubernetesアプリケーションの機能と可用性の両方を強化し、パブリッククラウドとオンプレミス環境にわたるコンテナ化されたワークロードの管理、保護、移動を簡易化できます。 また、REST APIとSDKを使用した自動化機能を提供し、プログラム経由でアクセスして既存のワークフローとシームレスに統合できます。
+
+Astra ControlはKubernetesネイティブであるため、既存のAPIやSDKとの後方互換性を維持しながら、カスタムリソースを活用するデータ保護ワークフローを実現できます。Kubernetesネイティブのデータ保護には大きなメリットがあります。KubernetesのAPIやリソースとシームレスに統合することで、組織の既存のCI / CDツールやGitOpsツールを通じて、データ保護がアプリケーションのライフサイクルに本質的に組み込まれるようになります。
+
+image:astra-family-architecture-v1_IEOPS-1558.png["Astra Controlのアーキテクチャ"]
+
+Astra Controlは、次の4つのコンポーネントを基盤として構築されています。
+
+* * Astra Control *：Astra Controlは、すべての管理対象クラスタを一元的に管理するサービスです。クラウドとオンプレミスでのアプリケーションの保護とモビリティのためのワークロードのオーケストレーションと、次の機能を提供します。
++
+** 複数のクラスタとクラウドを組み合わせて表示
+** オーケストレーションされたワークフローの保護
+** きめ細かなリソースの視覚化と選択
+
+
+* * Astra Connector *：Astra Connectorは、Astra Controlと連携して各管理対象クラスタへのセキュアな接続を提供し、接続ステータスに関係なくスケジュールされた処理をローカルで実行できるようにします。また、次の機能も提供します。
++
+** 接続ステータスに関係なく、スケジュールされた操作をローカルで実行
+** Astraのシステムリソース使用量をクラスタ間で分散、最適化するローカル運用
+** セキュリティを向上させるために、クラスタへの最小限の権限でのアクセスを可能にするローカルインストール
+
+
+* * Astra Control Provisioner *：Astra Control Provisionerは、CSIのコアプロビジョニング機能と高度なストレージ管理機能を提供し、セキュリティとディザスタリカバリの設定を強化します。さらに、以下の機能も提供します。
++
+** コンテナ化されたワークロード向けの動的なストレージプロビジョニング
+** 高度なストレージ管理：
++
+*** コンテナからPVへのデータの転送中暗号化
+*** リージョン間、ゾーン間レプリケーションを使用したSnapMirror Cloud機能
+
+
+
+
+* * Astraカスタムリソース*：各クラスタで使用されるカスタムリソースにより、Kubernetesネイティブのアプローチでローカルで運用を実行できるため、Kubernetesに対応した他のツールや自動化との統合が簡易化され、次の機能が提供されます。
++
+** エコシステムツールの直接統合と自動化のワークフロー
+** カスタムワークフローを可能にする下位レベルのプリミティブ
+
+
+
+
+
+
+== 導入モデル
+
+Astra Controlには2つの導入モデルがあります。
+
+image:astra-architecture-diagram-v6.png["Astraの導入モデル"]
 
 * * Astra Control Service *：複数のクラウドプロバイダ環境および自己管理型KubernetesクラスタのKubernetesクラスタに対して、アプリケーション対応のデータ管理を提供する、ネットアップのマネージドサービスです。
 +
@@ -62,77 +103,123 @@ https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のド
 
 
 
-[cols="1h,2a,2a"]
+[cols="1h,2d,2a"]
 |===
 |  | Astra 制御サービス | Astra Control Center の略 
 
 
-| どのような方法で提供されますか？  a| 
-ネットアップのフルマネージドクラウドサービス
- a| 
-ソフトウェアとしてダウンロード、インストール、および管理します
+| どのような方法で提供されますか？ | ネットアップのフルマネージドクラウドサービス  a| 
+ソフトウェアとしてダウンロード、インストール、および管理できます
 
 
 
-| ホストされているのはどこですか？  a| 
-ネットアップが選択したパブリッククラウドで実現
- a| 
+| ホストされているのはどこですか？ | ネットアップが選択したパブリッククラウドで実現  a| 
 自社所有のKubernetesクラスタ
 
 
 
-| 更新方法  a| 
-管理はネットアップが行います
- a| 
+| 更新方法 | 管理はネットアップが行います  a| 
 更新を管理します
 
 
 
-| ストレージバックエンドでサポートされるもの  a| 
-* Amazon Web Servicesの特長
+| サポートされているKubernetesディストリビューションを教えてください。  a| 
+* *クラウドプロバイダ*
++
+** Amazon Web Services の
++
+*** Amazon Elastic Kubernetes Service（EKS）
+
+
+** Google Cloud
++
+*** Google Kubernetes Engine （ GKE ）
+
+
+** Microsoft Azure
++
+*** Azure Kubernetes Service （ AKS ）
+
+
+
+
+* *自己管理クラスタ*
++
+** Kubernetes（アップストリーム）
+** Rancher Kubernetes Engine （ RKE ）
+** Red Hat OpenShift Container Platform
+
+
+* *オンプレミスクラスタ*
++
+** Red Hat OpenShift Container Platform（オンプレミス）
+
+
+
+ a| 
+* Azure Stack HCIで実行されるAzure Kubernetes Service
+* Google Anthos
+* Kubernetes（アップストリーム）
+* Rancher Kubernetes Engine （ RKE ）
+* Red Hat OpenShift Container Platform
+
+
+
+
+| サポートされているストレージバックエンドは何ですか。  a| 
+* *クラウドプロバイダ*
++
+** Amazon Web Services の
++
+*** Amazon EBSのことです
+*** NetApp ONTAP 対応の Amazon FSX
+*** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
+
+
+** Google Cloud
++
+*** Google Persistent Disk のことです
+*** NetApp Cloud Volumes Service の略
+*** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
+
+
+** Microsoft Azure
++
+*** Azure Managed Disksの略
+*** Azure NetApp Files の特長
+*** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Cloud Volumes ONTAP"^]
+
+
+
+
+* *自己管理クラスタ*
 +
 ** Amazon EBSのことです
-** NetApp ONTAP 対応の Amazon FSX
-** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["Cloud Volumes ONTAP"^]
-
-
-* Google Cloud
-+
-** Google Persistent Disk のことです
-** NetApp Cloud Volumes Service の略
-** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP"^]
-
-
-* Microsoft Azure
-+
 ** Azure Managed Disksの略
-** Azure NetApp Files の特長
-** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Cloud Volumes ONTAP"^]
-
-
-* 自己管理クラスタ：
-+
-** Amazon EBSのことです
 ** Google Persistent Disk のことです
-** Azure Managed Disksの略
-** link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^]
+** NetApp MetroCluster
+** https://longhorn.io/["ロングホーン""^]
+
+
+* *オンプレミスクラスタ*
++
+** NetApp MetroCluster
+** NetApp ONTAP AFF および FAS システム
+** NetApp ONTAP Select の略
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^]
+** https://longhorn.io/["ロングホーン""^]
 
 
 
  a| 
 * NetApp ONTAP AFF および FAS システム
-* link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Cloud Volumes ONTAP"^]
+* NetApp ONTAP Select の略
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/["Cloud Volumes ONTAP"^]
+* https://longhorn.io/["ロングホーン""^]
 
 
 |===
-
-
-== Astra Trident
-
-Astra Trident は、 Kubernetes Container Storage Interface （ CSI ）ドライブユーザーの間で行われるネットアップのオープンソース実装です。Astra Trident が Kubernetes アプリケーションのオーケストレーションとデータ接続を実現
-
-https://docs.netapp.com/us-en/trident/index.html["Astra Trident のドキュメント"^]
-
 
 
 == を参照してください。
