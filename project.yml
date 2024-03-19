@@ -2,49 +2,13 @@
 settings:
   name: Astra Family
   search: astra-control-service,astra-control-center,astra-automation,trident
+  internal:
+    pdf_enabled: false
   prod:
+    pdf_enabled: false
     harmony_enabled: false
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: Astra 製品ファミリーのドキュメント
     url: "/index.html"
-  - title: 法的通知
-    url: "/legal-notices.html"
-product-family:
-  sidebarlinks:
-  - title: すべての製品
-    tags: tag_application_data_management,tag_storage_management,tag_data_storage,tag_api,tag_get_started
-    class: active
-  - title: アプリケーションデータ管理
-    tags: tag_application_data_management
-  - title: ストレージ管理
-    tags: tag_storage_management
-  - title: 自動化と API
-    tags: tag_api
-  tiles:
-  - title: Astra Controlの詳細をご確認ください
-    icon: "./media/Astra_Family_logo_line.png"
-    url: intro-family.html
-    summary: Astra 製品ファミリーの詳細をご確認ください。
-    tags: all, tag_get_started
-  - title: Astra 制御サービス
-    icon: "./media/Astra_Control_logo_line.png"
-    url: https://docs.netapp.com/us-en/astra/index.html
-    summary: ネットアップが管理するサービスを使用して、パブリッククラウドの Kubernetes ワークロードをアプリケーション対応で管理
-    tags: all, tag_application_data_management
-  - title: Astra Control Center の略
-    icon: "./media/Astra_Control_logo_line.png"
-    url: https://docs.netapp.com/us-en/astra-control-center/index.html
-    summary: アプリケーション対応の Kubernetes ワークロードのデータ管理に、自己管理ソフトウェアを使用できます。
-    tags: all, tag_application_data_management
-  - title: Astra Trident
-    icon: "./media/Astra_Trident_logo_line2.png"
-    url: https://docs.netapp.com/us-en/trident/index.html
-    summary: Kubernetes ワークロードに CSI 準拠のストレージプロビジョニングおよび管理を、ネットアップのストレージプロバイダとともに使用します。
-    tags: all, tag_storage_management
-  - title: Astra の自動化と API
-    icon: "./media/Astra_Family_logo_line.png"
-    url: https://docs.netapp.com/us-en/astra-automation/index.html
-    summary: API と SDK を使用して、 Astra の運用ワークフローを自動化できます。
-    tags: all, tag_api
