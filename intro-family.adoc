@@ -91,7 +91,7 @@ Astra Controlは、次の4つのコンポーネントを基盤として構築さ
 
 Astra Controlには2つの導入モデルがあります。
 
-image:astra-architecture-diagram-v6.png["Astraの導入モデル"]
+image:astra-architecture-diagram-v7.png["Astraの導入モデル"]
 
 * * Astra Control Service *：複数のクラウドプロバイダ環境および自己管理型KubernetesクラスタのKubernetesクラスタに対して、アプリケーション対応のデータ管理を提供する、ネットアップのマネージドサービスです。
 +
@@ -152,7 +152,7 @@ https://docs.netapp.com/us-en/astra-control-center/["Astra Control Center のド
 
 * *オンプレミスクラスタ*
 +
-** Red Hat OpenShift Container Platform（オンプレミス）
+** オンプレミスのRed Hat OpenShift Container Platform
 
 
 

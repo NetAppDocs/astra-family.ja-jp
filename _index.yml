@@ -15,27 +15,27 @@ product-family:
     tags: tag_api
   tiles:
   - title: Astra Controlの詳細をご確認ください
-    icon: "./media/Astra_Family_logo_line.png"
+    icon: "./media/NetApp-Astra-ship.png"
     url: intro-family.html
     summary: Astra Controlの詳細をご確認ください。
     tags: tag_all, tag_application_data_management, tag_storage_management, tag_api
   - title: Astra 制御サービス
-    icon: "./media/Astra_Control_logo_line.png"
+    icon: "./media/NetApp-Astra-ship.png"
     url: "../astra/index.html"
     summary: ネットアップが管理するサービスを使用して、パブリッククラウドの Kubernetes ワークロードをアプリケーション対応で管理
     tags: tag_all, tag_application_data_management
   - title: Astra Control Center の略
-    icon: "./media/Astra_Control_logo_line.png"
+    icon: "./media/NetApp-Astra-ship.png"
     url: "../astra-control-center/index.html"
     summary: アプリケーション対応の Kubernetes ワークロードのデータ管理に、自己管理ソフトウェアを使用できます。
     tags: tag_all, tag_application_data_management
   - title: Astra Trident
-    icon: "./media/Astra_Trident_logo_line2.png"
+    icon: "./media/Astra-Trident-logo.png"
     url: "../trident/index.html"
     summary: Kubernetes ワークロードに CSI 準拠のストレージプロビジョニングおよび管理を、ネットアップのストレージプロバイダとともに使用します。
     tags: tag_all, tag_storage_management
   - title: Astra の自動化と API
-    icon: "./media/Astra_Family_logo_line.png"
+    icon: "./media/NetApp-Astra-ship.png"
     url: "../astra-automation/index.html"
     summary: API と SDK を使用して、 Astra の運用ワークフローを自動化できます。
     tags: tag_all, tag_api
