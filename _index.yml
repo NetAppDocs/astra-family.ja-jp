@@ -30,7 +30,7 @@ product-family:
     summary: アプリケーション対応の Kubernetes ワークロードのデータ管理に、自己管理ソフトウェアを使用できます。
     tags: tag_all, tag_application_data_management
   - title: Astra Trident
-    icon: "./media/Astra-Trident-logo.png"
+    icon: "./media/Astra-Trident-logo2.png"
     url: "../trident/index.html"
     summary: Kubernetes ワークロードに CSI 準拠のストレージプロビジョニングおよび管理を、ネットアップのストレージプロバイダとともに使用します。
     tags: tag_all, tag_storage_management
