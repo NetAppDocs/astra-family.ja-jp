@@ -19,11 +19,6 @@ product-family:
     url: intro-family.html
     summary: Astra Controlの詳細をご確認ください。
     tags: tag_all, tag_application_data_management, tag_storage_management, tag_api
-  - title: Astra 制御サービス
-    icon: "./media/NetApp-Astra-ship.png"
-    url: "../astra/index.html"
-    summary: ネットアップが管理するサービスを使用して、パブリッククラウドの Kubernetes ワークロードをアプリケーション対応で管理
-    tags: tag_all, tag_application_data_management
   - title: Astra Control Center の略
     icon: "./media/NetApp-Astra-ship.png"
     url: "../astra-control-center/index.html"
