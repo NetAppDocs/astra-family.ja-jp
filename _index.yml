@@ -26,7 +26,7 @@ product-family:
     tags: tag_all, tag_application_data_management
   - title: Astra Trident
     icon: "./media/Astra-Trident-logo2.png"
-    url: "../trident/index.html"
+    url: "../trident-2406/index.html"
     summary: Kubernetes ワークロードに CSI 準拠のストレージプロビジョニングおよび管理を、ネットアップのストレージプロバイダとともに使用します。
     tags: tag_all, tag_storage_management
   - title: Astra の自動化と API
